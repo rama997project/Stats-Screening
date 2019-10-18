@@ -1,71 +1,40 @@
-Table of Contents
-Flashcard Community - Software Requirements Specification
 
-Table of Contents
+= Stats-Screening 
+:toc:
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
 
-1. Introduction
 
-1.1 Purpose
-1.2 Scope
-1.3 Definitions, Acronyms and Abbreviations
-1.4 References
-1.5 Overview
-2. Overall Description
 
-2.1 Vision
-2.2 Product perspective
-
-2.3 User characteristics
-2.4 Dependencies
-3. Specific Requirements
-
-3.1 Functionality – Data Backend
-
-3.1.1 Read data given over API endpoints
-3.1.2 Parse data
-3.1.3 Provide data
-3.2 Functionality – User Interface
-
-3.2.1 User system
-3.2.3 Flashcard boxes
-3.2.4 Flashcards
-3.2.5 Statistics
-3.3 Usability
-
-3.4 Reliability
-
-3.4.1 Availability
-3.4.2 MTBF, MTTR
-3.4.3 Accuracy
-3.4.4 Bug classes
-3.5 Performance
-
-3.5.1 Response time
-3.5.2 Throughput
-3.5.3 Capacity
-3.5.4 Resource utilization
-3.6 Supportability
-
-3.7 Design Constraints
-
-3.7.1 Development tools
-3.7.2 Spring Boot
-3.7.3 ReactJS
-3.7.4 Supported Platforms
-3.8 Online User Documentation and Help System Requirements
-
-3.9 Purchased Components
-
-3.10 Interfaces
-
-3.10.1 User Interfaces
-3.10.2 Hardware Interfaces
-3.10.3 Software Interfaces
-3.10.4 Communications Interfaces
-3.11 Licensing Requirements
-
-3.12 Legal, Copyright and other Notices
-
-3.13 Applicable Standards
-
-4. Supporting Information
+==	Introduction	
+===	Purpose	
+===	Scope	
+===	Definitions, Acronyms, and Abbreviations	
+===	References	
+===	Overview	
+==	Overall Description	
+==	Specific Requirements	
+===	Functionality	
+====	<Functional Requirement One>	
+===	Usability	
+====	<Usability Requirement One>	
+===	Reliability	
+====	<Reliability Requirement One>	
+===	Performance	
+====	<Performance Requirement One>	
+===	Supportability	
+====	<Supportability Requirement One>	
+===	Design Constraints	
+====	<Design Constraint One>	
+===	On-line User Documentation and Help System Requirements	
+===	Purchased Components	
+===	Interfaces	
+====	User Interfaces	
+====	Hardware Interfaces	
+====	Software Interfaces	
+====	Communications Interfaces	
+===	Licensing Requirements	
+===	Legal, Copyright, and Other Notices	
+===	Applicable Standards	
+==	Supporting Information
