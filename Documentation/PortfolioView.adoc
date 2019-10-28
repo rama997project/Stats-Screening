@@ -8,8 +8,13 @@
 
 === 1.2 Mockup
 
-image::portfolio_view.png[]
-_28.10.2019_
+*this is the relevant area:*
+
+image::ExportingPortfolio.jpg[]
+
+*please ignore this one, it's merely for future use:*
+
+
 
 == 2. Flow of Events
 
