@@ -8,6 +8,8 @@
 
 === 1.2 Mockup
 
+image::portfolio_view.png[]
+_28.10.2019_
 
 == 2. Flow of Events
 
@@ -15,7 +17,9 @@
 
 ==== Activity Diagram
 
-
+image::ViewingPortfolio.png[]
+_Check out whether this is actually a valid activity-diagram-> because not always connected_
+_28.10.2019_
 
 ==== .feature File
 
