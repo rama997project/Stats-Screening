@@ -1,6 +1,6 @@
-== Use-Case Specification: Portfolio View
+== Use-Case Specification: Exporting Portfolio
 
-== 1. Viewing Portfolio
+== 1. Exporting Portfolio
 
 === 1.1 Brief Description
 
