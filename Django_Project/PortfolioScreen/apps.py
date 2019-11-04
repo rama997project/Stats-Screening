@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class PortfolioscreenConfig(AppConfig):
+class PortfolioScreenConfig(AppConfig):
     name = 'PortfolioScreen'
