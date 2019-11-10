@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from PortfolioScreen.models import Stock
+from .models import Stock
 
 
 def PortfolioScreen(request):
@@ -11,3 +11,16 @@ def PortfolioScreen(request):
 
 def about(request):
     return render(request, 'PortfolioScreen/about.html', {'title:':'About'})
+
+def table(request):
+    context = {
+        'Stocks': Stock.objects.all(),
+        'title': "Portfolio Table"
+    }
+    return render(request, 'pages/table.html', context)
+
+def chart(request):
+    return render(request, 'pages/chart.html', {'title':'Charts'})
+
+def settings(request):
+    return render(request, 'pages/settings.html', {'title': 'Settings'})
