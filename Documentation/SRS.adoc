@@ -72,9 +72,6 @@ _Written on 20.10.19_
 image::Use Case Diagram.png[Sunset]
 _Written on 20.10.19_
 
-=== First ROUGH Draft of Static Diagram for View
-image::Static Diagram.png[Sunset]
-this diagram is to be continued when required _Written on 20.10.19_
 
 ==	Specific Requirements	
 ===	Functionality	
@@ -87,23 +84,23 @@ When entering stats-screening.com user can choose btw two options: loging in or 
 * Upon signing up required to enter username, pw, email, company, company-image, pw again.
 * Upon logging in it's required to enter username, pw.
 
-==== Portfolio
-This module is the core element of the entire application. It contains a list of all stocks, list of all figures and a few mandatary variables. A certain amount of fields is equivalent to the columns displayed on the page. From the figures through an API (Yahoo/Google Finance) the values can be drawn, displayed as well as the charts which can be drawn as well. 
-_Written on 20.10.19_
+==== Using a Portfolio
+This portfolio is the core element of the entire application. It can be constantly viewed by the consumer. It contains a list of all stocks, list of all figures and a few mandatory items such as ISIN and further information about the stock. Those information can be drawn from an API such as Google Finance/Yahoo Finance
+_Written on 25.11.19_
 
-==== Portfolio Settings
-Will be displayed as a tab called "Settings of Portfolio" preferably used to remove figures. Name name, API as well as Benchmark can be changed. The API and Benchmark can be choosen through a comboxbox. If time remains an export option is available which decides if charts and/or tables should be included in the export.
+==== Changing a Portfolio
+It should be possible to remove figures, switch the Api from which the data is drawn as well as the Benchmark. 
 
 ==== Exporting Portfolio
-Export is an interface implementing Export as Excel,Pdf,Csv. This will produce a file which is reusable in common portfolio management tools such as Bloomberg, FactSet, VWD. Those values can then be used for further purposes. So far only static values (pure values) are planned. If time remains:
+Export is an option which can be used to export the portfolio as Excel,Pdf,Csv. This will produce a file which is reusable in common portfolio management tools such as Bloomberg, FactSet, VWD. Those values can then be used for further purposes. So far only static values (pure values) are planned. If time remains:
 
 * an Excel Plugin which fetches the values and updates them any point in time set through our Controller is recommendable.
 * the optionity to export the charts would be nice to have 
-_Written on 20.10.19_
+_Written on 25.11.19_
 
 ==== Toolbox
 Contains all the figures and charts that can be added to the portfolio. The way of adding them is by simply clicking on them (or if time remains by moving them into the portfolio via drag&drop). The charts might also be added in the tab portfolio. Below the tab there can be a combobox & button used for adding the charts. 
-The Toolbox might contain all of the following numbers: _Written on 20.10.19_ 
+The Toolbox might contain all of the following numbers: _Written on 25.11.19_ 
 drawn from book "Practical Risk-Adjusted Performance Measurement" by Carl R. Bacon as published by Wiley
 _Written on 20.10.19_
 
@@ -137,17 +134,15 @@ Drawdown:
 _Written on 20.10.19_
 
 ==== Opening&Saving Operations
-Opening a portfolio is done by opening a textfile which contains all the columns and ISINs used. Upon opening all values will be refreshed instantly.
-_Written on 20.10.19_
+Opening a portfolio should be possible by simply opening a file which as before been saved.
+It contains all the ISINs and columns used.
+_Written on 25.11.19_
 
-==== Stats-Screening Controller
+==== Stats-Screening Accessing data
 By using the Post-method if correct credentials are transmitted, all required JSON-data will be fetched and then displayed in 1. the application's portfolio table, 2. if time remains in an Excel-spreadsheet through a plugin.
 The Controller fetches it's data from the Model.
-_Written on 20.10.19_
+_Written on 25.11.19_
 
-==== Stats-Screening Model
-The Model is in constant contact with the Controller. It is the so-to-speak computation core which does the number crunching with Python Pandas. As such, it will retrieve the prices of the stock and the BM over a specified time horizon. After having finished the calculation it will return the values.
-_Written on 20.10.19_
 
 
 ===	Usability	
@@ -197,7 +192,7 @@ We recommend using chrome as a browser. The lastest version of the Microsoft Edg
 The server's operating system must support MySQL and programs compiled using Go. A RESTful API shall be used to communicate between client and server.
 _Written on 20.10.19_
 
-===	On-line User Documentation and Help System Requirements
+===	Online User Documentation and Help System Requirements
 First we will start using tooltips (Mouse-Hover-Flags) to do the job. In Addition to that we will give an instructive page which shows goal-oriented FAQ, for instance, how to export a devised portfolio as an Excel-spreadsheet. Since it's not an overly complex application, a particularily detailed report with hundrets of pages won't be required. FAQ should be sufficient.
 
 ===	Purchased Components
