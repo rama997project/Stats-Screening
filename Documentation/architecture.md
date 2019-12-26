@@ -40,7 +40,7 @@ This document contains the architectural representation, goals and constraints.
 
 Our project bookly uses the classic MVC structure as follows:
 
-![MVC](MVC.png "Average MVC")
+![MVC](MVC.jpg "Average MVC")
 
 source: Telusko, 
 ## 3. Architectural Goals And Constraints
@@ -51,7 +51,7 @@ Main technology is Django MVT. This framework includes backend as well as fronte
 
 This is our overall use-case diagram:
 
-![Use-case diagram](Use Case Diagram.png "Use Case Diagram")
+![Use-case diagram](Use_Case_Diagram.png "Use Case Diagram")
 
 ## 5. Logical View
 
@@ -77,7 +77,7 @@ Drawbacks of MVC Architecture –
 
 
 In Python Django its called Model View Template.
-![MVT](MVT.png "Python MVT")
+![MVT](MVT.jpg "Python MVT")
 ### 5.2 Architecturally Significant Design Packages
 
 We have a backend and a frontend module. The backend module contains our model. The frontend module contains our view. 
