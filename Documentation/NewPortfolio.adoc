@@ -20,7 +20,7 @@ image::NewPortfolio.png[]
 
 ==== .feature File
 
-image::FeatureNewPortfolio.JPG
+image::FeatureNewPortfolio.JPG[]
 
 === 2.2 Alternative Flows
 
