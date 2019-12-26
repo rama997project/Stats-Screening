@@ -25,7 +25,7 @@ image::CreateChart.png[]
 
 ==== .feature File
 
-image::CreateChart.jpg[]
+image::CreateChart.JPG[]
 
 
 === 2.2 Alternative Flows
