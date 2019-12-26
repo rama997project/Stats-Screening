@@ -25,7 +25,7 @@ image::AddStock.png[]
 
 ==== .feature File
 
-image::AddStock.jpg[]
+image::AddStock.JPG[]
 
 
 === 2.2 Alternative Flows
