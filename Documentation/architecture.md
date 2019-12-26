@@ -40,7 +40,7 @@ This document contains the architectural representation, goals and constraints.
 
 Our project bookly uses the classic MVC structure as follows:
 
-![MVC](MVC.jpg "Average MVC")
+![MVC](MVC.png "Average MVC")
 
 source: Telusko, 
 ## 3. Architectural Goals And Constraints
@@ -51,7 +51,7 @@ Main technology is Django MVT. This framework includes backend as well as fronte
 
 This is our overall use-case diagram:
 
-![Use-case diagram](Use_Case_Diagram.png "Use Case Diagram")
+![Use Case Diagram](Use Case Diagram.png "Use Case Diagram")
 
 ## 5. Logical View
 
