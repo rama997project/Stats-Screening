@@ -116,15 +116,15 @@
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" data-toggle="modal" data-target="#myModal" href="#">New Portfolio</a>
-                    <a class="nav-item nav-link" href="{% url 'exportCSV' %}">Export CSV</a>
-                    <a class="nav-item nav-link" href="{% url 'exportPDF' %}">Export PDF</a>
+                    <!--<a class="nav-item nav-link" href="{% url 'exportCSV' %}">Export CSV</a>
+                    <a class="nav-item nav-link" href="{% url 'exportPDF' %}">Export PDF</a> -->
                     <a class="nav-item nav-link" href="/">Screening Portfolio</a>
                     <a class="nav-item nav-link" href="/about">About</a>
                 </div>
                 <!-- Navbar Right Side -->
                 <div class="navbar-nav">
                     {% if Users.is_authenticated %}
-                    <a class="nav-item nav-link" href="{%  url 'profile' %}">Profile</a>
+                    <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
                     <a class="nav-item nav-link" href="{% url 'logout' %}">Login</a>
                     {% else %}
                     <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
