@@ -21,7 +21,7 @@ endwhile (available)
 |User|
 :press add button;
 |System|
-:all relevant fields/columns are fetched from JSON;
+:all relevant fields/columns are fetched from yfinance and then from Python dictonary/Pandas DataFrame;
 :all relevant fields of \nstock are loaded into \nportfolio;
 |GUI|
 :close dialog;

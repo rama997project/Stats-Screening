@@ -28,9 +28,8 @@ endif
 
 
 |System|
-:call Json with columns/figures;
-:remove or add specified columns/figures from JSON;
+:rebuild Portfolio-dictionary;
 |GUI|
-:remove or add entire column;
+:rebuild whole table;
 stop
 @enduml

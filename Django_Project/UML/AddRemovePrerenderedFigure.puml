@@ -16,7 +16,7 @@ else (Remove figure)
 endif
 
 |System|
-:call Json with columns/figures;
+:create Python dictionary/Pandas DataFrame with specified number;
 :remove or add specified columns/figures from JSON;
 |GUI|
 :remove or add entire column;
