@@ -1,18 +1,15 @@
-== Use-Case Specification: Access and Save Portfolio
+== Use-Case Specification: Change Portfolio Benchmark
 
-== 1. Add Statistical Figure 
+== 1. Add Statistical Figure
 
 === 1.1 Brief Description
 
-A single user can access and save the specified portfolio (after he or she has changed it).
+Most figures are calculated on a specific benchmark. (Stock versus Index). In this case a benchmark is an index.
 
 === 1.2 Mockup
+.Buttons on main page
+image::Portfolio Settings.png[]
 
-image::MockUpAccessSavePortfolio.JPG[]
-.Open Portfolio
-image::AdobeXDMockUp/Open Portfolio.png[]
-.Save Portfolio
-image::AdobeXDMockUp/Save Portfolio.png[]
 
 == 2. Flow of Events
 
@@ -21,10 +18,7 @@ image::AdobeXDMockUp/Save Portfolio.png[]
 ==== Activity Diagram
 
 .Access the portfolio
-image::AccessPortfolio.png[]
-
-.Save the portfolio
-image::SavePortfolio.png[]
+image::ChangePortfolioBenchmark.png[]
 
 ==== .feature File
 
