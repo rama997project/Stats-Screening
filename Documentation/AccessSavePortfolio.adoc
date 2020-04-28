@@ -1,6 +1,6 @@
 == Use-Case Specification: Access and Save Portfolio
 
-== 1. Add Statistical Figure 
+== 1. Access and Save a Portfolio 
 
 === 1.1 Brief Description
 

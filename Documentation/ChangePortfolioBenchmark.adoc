@@ -1,6 +1,6 @@
-== Use-Case Specification: Change Portfolio Benchmark
+== Use-Case Specification: Portfolio Settings
 
-== 1. Add Statistical Figure
+== 1. Change Portfolio Benchmark
 
 === 1.1 Brief Description
 
@@ -22,7 +22,7 @@ image::ChangePortfolioBenchmark.png[]
 
 ==== .feature File
 
-image::AccessSavePortfolio.JPG[]
+image::ChangePortfolioBenchmark.JPG[]
 
 
 === 2.2 Alternative Flows
