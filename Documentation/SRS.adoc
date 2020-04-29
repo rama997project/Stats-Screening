@@ -192,6 +192,43 @@ We recommend using chrome as a browser. The lastest version of the Microsoft Edg
 The server's operating system must support MySQL and programs compiled using Go. A RESTful API shall be used to communicate between client and server.
 _Written on 20.10.19_
 
+==== Technology stack
+Since it is a WebApp that deals with number-crunching we have choosen Pyhton Django and Python Pandas as main means. The Technologies used are as follows:
+
+* Back-End: 
+** Python Django 
+** database: SQLite
+
+* Implementation of Stats:  
+** https://pandas.pydata.org/about.html by Two Sigma and Anaconda (still BSD licence)
+** API: fmpcloud.io/documentation
+
+* Front-End:
+** https://jquery.com/  ,  https://jqueryui.com/ ,
+** NO REACT
+
+* CSS:  
+** https://getbootstrap.com/docs/4.3/layout/overview/ 
+
+* stats:  
+** https://pandas.pydata.org
+** Google: developers.google.com/chart/interactive/docs/gallery/scatterchart?hl=de
+** Charts:
+Google Charts/ChartJS (no Pandas visualisations)
+
+* Architecture: 
+** preferably MVC, as discussed in WE1 (if feasible with Django)
+
+* IDE: JetBrains PyCharm
+
+* VC: Github
+
+* Planning: YouTrack
+
+* Documentation: YouTrack, 
+** Language: mainly reStructuredText  https://wiki.python.org/moin/reStructuredText , for documents generally AsciiDoc( https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/ )
+
+
 ===	Online User Documentation and Help System Requirements
 First we will start using tooltips (Mouse-Hover-Flags) to do the job. In Addition to that we will give an instructive page which shows goal-oriented FAQ, for instance, how to export a devised portfolio as an Excel-spreadsheet. Since it's not an overly complex application, a particularily detailed report with hundrets of pages won't be required. FAQ should be sufficient.
 
