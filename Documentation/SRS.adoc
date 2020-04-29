@@ -72,6 +72,10 @@ _Written on 20.10.19_
 image::Use_Case_Diagram.png[USD]
 _Written on 20.10.19_
 
+all use cases are listed in the following blog entries:
+
+* https://hertzsch2.wixsite.com/stats-screening/post/___uc
+* https://hertzsch2.wixsite.com/stats-screening/post/use-cases-2-semester
 
 ==	Specific Requirements	
 ===	Functionality	
