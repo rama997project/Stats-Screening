@@ -8,7 +8,7 @@ Most figures are calculated on a specific benchmark. (Stock versus Index). In th
 
 === 1.2 Mockup
 .Buttons on main page
-image::Portfolio Settings.png[]
+image::AdobeXDMockUp/Portfolio Settings.png[]
 
 
 == 2. Flow of Events
