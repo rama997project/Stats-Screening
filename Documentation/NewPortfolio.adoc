@@ -22,6 +22,8 @@ image::NewPortfolio.png[]
 
 image::FeatureNewPortfolio.JPG[]
 
+link:../Django_Project/Feature/NewPortfolio.feature[path to feature file]
+
 === 2.2 Alternative Flows
 
 n/a

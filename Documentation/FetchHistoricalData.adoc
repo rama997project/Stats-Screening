@@ -24,6 +24,7 @@ image::FetchHistoricalData.png[]
 
 image::FetchHistoricalData.JPG[]
 
+link:../Django_Project/Feature/FetchHistoricalData.feature[path to feature file]
 
 === 2.2 Alternative Flows
 

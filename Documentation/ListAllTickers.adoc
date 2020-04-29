@@ -24,7 +24,7 @@ image::ListAllTickers.png[]
 
 image::ListAllTickers.JPG[]
 
-
+link:../Django_Project/Feature/ListAllTickers.feature[path to feature file]
 === 2.2 Alternative Flows
 
 n/a

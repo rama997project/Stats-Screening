@@ -9,7 +9,7 @@ decisions which have been made on the system.
 
 ### 1.2 Scope
 
-This document describes the technical architecture of the bookly project, including module structure and dependencies as 
+This document describes the technical architecture of the Stats-Screening project, including module structure and dependencies as 
 well as the structure of classes.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
@@ -39,7 +39,7 @@ This document contains the architectural representation, goals and constraints.
 
 ## 2. Architectural Representation
 
-Our project bookly uses the classic MVC structure as follows:
+Our project Stats-Screening uses the classic MVC structure as follows:
 
 ![MVC](MVC.png "Average MVC")
 

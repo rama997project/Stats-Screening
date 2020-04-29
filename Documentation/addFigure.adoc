@@ -28,6 +28,7 @@ image::AddRemovePrerenderedFigure.png[]
 
 image::AddFigure.JPG[]
 
+link:../Django_Project/Feature/addFigure.feature[path to feature file]
 
 === 2.2 Alternative Flows
 

@@ -27,6 +27,7 @@ image::CreateChart.png[]
 
 image::CreateChart.JPG[]
 
+link:../Django_Project/Feature/createChart.feature[path to feature file]
 
 === 2.2 Alternative Flows
 

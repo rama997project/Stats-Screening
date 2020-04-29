@@ -24,7 +24,7 @@ image::ChangePortfolioBenchmark.png[]
 
 image::ChangePortfolioBenchmark.JPG[]
 
-
+link:../Django_Project/Feature/ChangePortfolioBenchmark.feature[path to feature file]
 === 2.2 Alternative Flows
 
 n/a

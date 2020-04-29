@@ -25,6 +25,7 @@ image::RefreshingPortfolio.png[]
 
 image::RefreshingPortfolio.JPG[]
 
+link:../Django_Project/Feature/RefreshingPortfolio.feature[path to feature file]
 
 === 2.2 Alternative Flows
 

@@ -30,6 +30,7 @@ image::SavePortfolio.png[]
 
 image::AccessSavePortfolio.JPG[]
 
+link:../Django_Project/Feature/AccessSavePortfolio.feature[path to feature file]
 
 === 2.2 Alternative Flows
 

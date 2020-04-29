@@ -27,6 +27,7 @@ image::AddStock.png[]
 
 image::AddStock.JPG[]
 
+link:../Django_Project/Feature/AddStock.feature[path to feature file]
 
 === 2.2 Alternative Flows
 
