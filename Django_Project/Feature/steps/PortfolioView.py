@@ -25,3 +25,11 @@ def step_impl(context):
     :type context: behave.runner.Context
     """
     raise NotImplementedError(u'STEP: Then It should output CSV-File')
+
+
+@then("show Errordialog")
+def step_impl(context):
+    """
+    :type context: behave.runner.Context
+    """
+    raise NotImplementedError(u'STEP: Then show Errordialog')

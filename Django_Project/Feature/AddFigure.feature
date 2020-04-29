@@ -4,5 +4,5 @@ Feature: AddToolbox
   Scenario: AddFigure
    Given I am in Toolbox on the left side
     And  I have my Portfolio opened
-    When I click on specific Figure
+    When I drag&drop on specific Figure
     Then it should add column to my portfolio
