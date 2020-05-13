@@ -1,4 +1,4 @@
-from .Toolbox import Toolbox
+from Django_Project.PortfolioScreen.MajorComponents.Toolbox import Toolbox
 
 class Figure():
 

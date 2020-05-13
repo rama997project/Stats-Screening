@@ -1,6 +1,5 @@
-from .Figure import Figure
-from .Portfolio import Portfolio
-from .Toolbox import Toolbox
+from builtins import property, type
+
 
 class Stock():
 
@@ -19,7 +18,7 @@ class Stock():
             print(item)
             print(type(item))
 
-    def addfigure(self, figure: Figure):
+    def addfigure(self, figure):
         self.figures[figure.figurename()] = figure
 
     def removefigure(self, figurename):

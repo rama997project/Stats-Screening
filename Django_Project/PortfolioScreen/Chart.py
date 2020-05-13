@@ -1,8 +1,10 @@
-from .Portfolio import Portfolio
-from .Toolbox import Toolbox
+from builtins import property, float
+from typing import List
+Portfolio = List[float]
+
 
 class Chart():
-    def __int__(self, ChartType, Timehorizon, portfolio: Portfolio):
+    def __int__(self, ChartType, Timehorizon, portfolio):
         self.chartType = ChartType
         self.timeHorizon = Timehorizon
         #es kann immer nur einem Portfolio ein Chart zu ein und derselben Zeit zugeordnet werden!

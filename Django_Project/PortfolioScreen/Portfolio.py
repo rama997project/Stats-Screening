@@ -1,5 +1,7 @@
-from .Stock import Stock
-from .Figure import Figure
+from builtins import property, type
+
+import Django_Project.PortfolioScreen.MajorComponents.Stock
+import Django_Project.PortfolioScreen.MajorComponents.Figure
 #subclass of Stock
 
 class Portfolio():
@@ -21,12 +23,11 @@ class Portfolio():
             }
         else:
             self.figureList = figureList
-
-
-    def addStock(self, stock: Stock):
+    # nur Stock-Objekt rein
+    def addStock(self, stock):
         self.stockList[stock.ticker] = stock
-
-    def removeStock(self, stock: Stock):
+    # nur Stock-Objekt rein
+    def removeStock(self, stock):
         #create for each which finds the specified Stock and then removes it
         del self.stockList[stock.ticker]
 
@@ -34,13 +35,11 @@ class Portfolio():
         ##enter name and then find Stock and return it's object
         return self.StockList[ticker]
 
-
-
-
-    def addfigure(self, figure: Figure):
+    # hier darf nur das object Figure eingefügt werden
+    def addfigure(self, figure):
         self.stockList[figure.figurename()] = figure
-
-    def removefigure(self, figure: Figure):
+    # hier darf nur das object Figure eingefügt werden
+    def removefigure(self, figure):
         #create for each which finds the specified Stock and then removes it
         del self.stockList[figure.figurename()]
 
