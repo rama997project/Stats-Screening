@@ -1,51 +1,58 @@
-from builtins import property, type
+from builtins import property, type, set
 
 
 class Stock():
 
-    def __init__(self, ticker, price, figures=None):
-        self.ticker = ticker
-        self.curr_price = price
-        if figures is None:
-            self.figures = {  # key, #value
+    def __init__(self, tickerValue, priceValue, figuresValue=None):
+        self._ticker = tickerValue
+        self._curr_price = priceValue
+        if figuresValue is None:
+            self._figures = {  # key, #value
                 '': '',
             }
         else:
-            self.figures = figures
+            self._figures = figuresValue
 
     def calcAllFigures(self):
-        for item in self.figures.items():
+        for item in self._figures.items():
             print(item)
             print(type(item))
 
     def addfigure(self, figure):
-        self.figures[figure.figurename()] = figure
+        name_figure = figure.figurename
+        self._figures[name_figure] = figure
 
     def removefigure(self, figurename):
-        del self.figures[figurename]
+        del self._figures[figurename]
 
     def getfigure(self, figurename):
-        return ''.format(self.figures[figurename])
+        return ''.format(self._figures[figurename])
+
+
 
     @property
     def ticker(self):
-        return '{}'.format(self.ticker)
+        return '{}'.format(self._ticker)
+
+    @ticker.setter
+    def ticker(self, value):
+        self._ticker = value
+
+    @ticker.deleter
+    def ticker(self):
+        self.ticker = None
+
+
 
     @property
     def curr_price(self):
-        return '{}'.format(self.curr_price)
-
-    @ticker.setter
-    def ChartType(self, ticker):
-        self.ticker = type
-
-    @ticker.deleter
-    def ChartType(self):
-        self.ticker = None
+        return '{}'.format(self._curr_price)
 
     @curr_price.setter
-    def TimeHorizon(self, price):
-        self.curr_price = price
+    def curr_price(self, value):
+        self._curr_price = value
+
+
 
     @curr_price.deleter
     def TimeHorizon(self):

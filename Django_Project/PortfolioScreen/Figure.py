@@ -3,44 +3,43 @@ from builtins import property
 
 class Figure():
 
-    def __init__(self, figurename, figurevalue, figureid):
-        self.figurename = figurename
-        self.figurevalue = figurevalue
-        self.figureid = figureid
+    def __init__(self, figurenameValue, figurevalueValue, figureidValue):
+        self._figurename = figurenameValue
+        self._figurevalue = figurevalueValue
+        self._figureid = figureidValue
 
     @property
     def figurename(self):
-        return '{}'.format(self.figurename)
-
-    @property
-    def figurevalue(self):
-        return '{}'.format(self.figurevalue)
-
-    # figureid
-    @property
-    def figureid(self):
-        return '{}'.format(self.figureid)
+        return '{}'.format(self._figurename)
 
     @figurename.setter
-    def figurename(self, name):
-        self.figurename = name
+    def figurename(self, value):
+        self._figurename = value
 
     @figurename.deleter
     def figurename(self):
         self.figurename = None
 
+
+    @property
+    def figurevalue(self):
+        return '{}'.format(self._figurevalue)
+
     @figurevalue.setter
     def figurevalue(self, value):
-        self.figurevalue = value
+        self._figurevalue = value
 
-    @figurevalue.deleter
-    def figurevalue(self):
-        self.figurevalue = None
+
+
+    # figureid
+    @property
+    def figureid(self):
+        return '{}'.format(self._figureid)
 
     @figureid.setter
-    def figureid(self, figureid):
-        self.figureid = figureid
+    def figureid(self, value):
+        self._figureid = value
 
     @figureid.deleter
     def figureid(self):
-        self.figureid = None
+        self._figureid = None

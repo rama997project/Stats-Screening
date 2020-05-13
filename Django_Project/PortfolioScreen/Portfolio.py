@@ -1,43 +1,44 @@
-from builtins import property, type
+from builtins import property, type, set
 
 #subclass of Stock
 
 class Portfolio():
 
-    def __init__(self, portfolioName, inceptionDate, stockList = None, figureList = None):
-        self.portfolioName = portfolioName
-        self.inceptionDate = inceptionDate
-        self.stockList = stockList
-        self.figureList = figureList
+    def __init__(self, portfolioNameValue = "Portfolio", inceptionDateValue = '01-01-2015', stockListvalue = None, figureListvalue = None, chartTypevalue = None):
+        self._portfolioName = portfolioNameValue
+        self._inceptionDate = inceptionDateValue
+        self._chartType = chartTypevalue
 
         #set up dict
-        if self.stockList is None:
-            self.stockList = {  # key, #value
+        if stockListvalue is None:
+            self._stockList = {  # key, #value
                 '': '',
             }
         else:
-            self.stockList = stockList
+            self._stockList = stockListvalue
 
-        if self.figureList is None:
-            self.figureList = {  # key, #value
+        if figureListvalue is None:
+            self._figureList = {  # key, #value
                 '': '',
             }
         else:
-            self.figureList = figureList
+            self._figureList = figureListvalue
+
+
     # nur Stock-Objekt rein
     def addStock(self, stock):
-        self.stockList[stock.ticker] = stock
+        name_stock = stock.ticker
+        self._stockList[name_stock] = stock
+
     # nur Stock-Objekt rein
     def removeStock(self, stock):
         #create for each which finds the specified Stock and then removes it
-        del self.stockList[stock.ticker]
+        del self._stockList[stock.ticker]
 
     def getStock(self, ticker):
         ##enter name and then find Stock and return it's object
-        return self.StockList[ticker]
+        return self._stockList[ticker]
 
-    def getStockList(self):
-        return self.StockList
 
     # hier darf nur das object Figure eingefügt werden
     def addfigure(self, figure):
@@ -59,25 +60,48 @@ class Portfolio():
 
     @property
     def portfolioName(self):
-        return '{}'.format(self.portfolioName)
+        return '{}'.format(self._portfolioName)
+
+
+    @portfolioName.setter
+    def portfolioName(self, value):
+        self._portfolioName = value
+
 
     @property
     def inceptionDate(self):
-        return '{}'.format(self.inceptionDate)
-
-    @portfolioName.setter
-    def ChartType(self, portfolioName):
-        self.portfolioName = type
-
-    @portfolioName.deleter
-    def ChartType(self):
-        self.portfolioName = None
+        return '{}'.format(self._inceptionDate)
 
     @inceptionDate.setter
-    def TimeHorizon(self, inceptionDate):
-        self.inceptionDate = inceptionDate
+    def inceptionDate(self, value):
+        self._inceptionDate = value
 
-    @inceptionDate.deleter
-    def TimeHorizon(self):
-        self.inceptionDate = None
+
+    @property
+    def stockList(self):
+        return self._stockList
+
+    @stockList.setter
+    def stockList(self, value):
+        self._stockList = value
+
+
+    @property
+    def figureList(self):
+        return '{}'.format(self._figureList)
+
+    @figureList.setter
+    def figureList(self, value):
+        self._figureList = value
+
+    @property
+    def chartType(self):
+        return '{}'.format(self._chartType)
+
+    @chartType.setter
+    def chartType(self, value):
+        self._chartType = value
+
+
+
 
