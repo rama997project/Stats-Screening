@@ -74,8 +74,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Django_Project.wsgi.application'
 
-TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
