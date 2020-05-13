@@ -1,7 +1,5 @@
 from builtins import property, type
 
-import Django_Project.PortfolioScreen.MajorComponents.Stock
-import Django_Project.PortfolioScreen.MajorComponents.Figure
 #subclass of Stock
 
 class Portfolio():
@@ -9,6 +7,9 @@ class Portfolio():
     def __init__(self, portfolioName, inceptionDate, stockList = None, figureList = None):
         self.portfolioName = portfolioName
         self.inceptionDate = inceptionDate
+        self.stockList = stockList
+        self.figureList = figureList
+
         #set up dict
         if self.stockList is None:
             self.stockList = {  # key, #value
@@ -34,6 +35,9 @@ class Portfolio():
     def getStock(self, ticker):
         ##enter name and then find Stock and return it's object
         return self.StockList[ticker]
+
+    def getStockList(self):
+        return self.StockList
 
     # hier darf nur das object Figure eingefügt werden
     def addfigure(self, figure):
