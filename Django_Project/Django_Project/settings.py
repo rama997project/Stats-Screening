@@ -72,9 +72,6 @@ TEMPLATES = [
     },
 ]
 
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-NOSE_ARGS = ['--with-spec', '--spec-color']
-
 WSGI_APPLICATION = 'Django_Project.wsgi.application'
 
 # Database
