@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'PortfolioScreen',
-    'Users',
+    'PortfolioScreen.apps.PortfolioScreenConfig',
+    'Users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
