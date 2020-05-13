@@ -30,15 +30,18 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# 'PortfolioScreen.apps.PortfolioScreenConfig',
+# 'Users.apps.UsersConfig',
+
 INSTALLED_APPS = [
-    'PortfolioScreen.apps.PortfolioScreenConfig',
-    'Users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'PortfolioScreen',
+    'Users',
 ]
 
 MIDDLEWARE = [

@@ -1,4 +1,5 @@
-from Django_Project.PortfolioScreen.MajorComponents.Toolbox import Toolbox
+from builtins import property
+
 
 class Figure():
 
@@ -7,13 +8,16 @@ class Figure():
         self.figurevalue = figurevalue
         self.figureid = figureid
 
+    @property
     def figurename(self):
         return '{}'.format(self.figurename)
 
+    @property
     def figurevalue(self):
         return '{}'.format(self.figurevalue)
 
     # figureid
+    @property
     def figureid(self):
         return '{}'.format(self.figureid)
 
