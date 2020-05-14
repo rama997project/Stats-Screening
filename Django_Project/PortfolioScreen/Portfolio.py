@@ -36,7 +36,7 @@ class Portfolio():
         del self._stockList[stock.ticker]
 
     def getStock(self, ticker):
-        ##enter name and then find Stock and return it's object
+        #enter name and then find Stock and return it's object
         return self._stockList[ticker]
 
 
