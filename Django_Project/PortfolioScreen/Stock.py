@@ -7,16 +7,14 @@ class Stock():
         self._ticker = tickerValue
         self._curr_price = priceValue
         if figuresValue is None:
-            self._figures = {  # key, #value
-                '': '',
-            }
-        else:
-            self._figures = figuresValue
+            self._figures = {  # key, #value '': '', }
+            
+        else: self._figures = figuresValue
 
     def calcAllFigures(self):
         for item in self._figures.items():
-            print(item)
-            print(type(item))
+        print(item)
+        print(type(item))
 
     def addfigure(self, figure):
         name_figure = figure.figurename
